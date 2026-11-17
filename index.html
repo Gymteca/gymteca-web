@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Gymteca — App de gimnasio para apuntar tus entrenos serie a serie</title>
-<meta name="description" content="Gymteca es la app de gimnasio que registra cada serie, cronometra tu descanso y te dice cuándo subir el peso. Empieza gratis, sin registro y con tus datos solo en tu móvil.">
+<title>Gymteca — Una app de gimnasio para iPhone, en construcción</title>
+<meta name="description" content="Gymteca es una app de gimnasio para iPhone que está construyendo una sola persona. Mira por dónde va y sigue el proceso en redes. Próximamente en el App Store.">
 <link rel="canonical" href="https://gymteca.com/">
 <meta name="theme-color" content="#0b1514">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
@@ -17,8 +17,8 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Gymteca">
 <meta property="og:url" content="https://gymteca.com/">
-<meta property="og:title" content="Gymteca — Tu entreno, serie a serie">
-<meta property="og:description" content="Registra cada serie, descansa con temporizador y deja que el Coach te diga cuándo subir el peso. Empieza gratis y sin registro.">
+<meta property="og:title" content="Gymteca — Estoy construyendo una app de gimnasio">
+<meta property="og:description" content="Una app de gimnasio para iPhone, hecha por una sola persona y contada paso a paso. Próximamente en el App Store.">
 <meta property="og:image" content="https://gymteca.com/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -34,7 +34,8 @@
       "name": "Gymteca",
       "url": "https://gymteca.com/",
       "logo": "https://gymteca.com/assets/img/icon-512.png",
-      "email": "hola@gymteca.com"
+      "email": "hola@gymteca.com",
+      "sameAs": ["https://www.instagram.com/gymteca_app/", "https://www.facebook.com/gymteca"]
     },
     {
       "@type": "WebSite",
@@ -43,31 +44,6 @@
       "name": "Gymteca",
       "inLanguage": "es",
       "publisher": {"@id": "https://gymteca.com/#org"}
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Gymteca",
-      "url": "https://gymteca.app/",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "iOS, Android, Web",
-      "inLanguage": "es",
-      "description": "App de gimnasio para registrar entrenamientos serie a serie, con temporizador de descanso, récords personales y un coach que calcula cuándo subir el peso.",
-      "offers": [
-        {"@type": "Offer", "name": "Gratis", "price": "0", "priceCurrency": "USD"},
-        {"@type": "Offer", "name": "Pro mensual", "price": "3.99", "priceCurrency": "USD"},
-        {"@type": "Offer", "name": "Pro anual", "price": "29.99", "priceCurrency": "USD"},
-        {"@type": "Offer", "name": "Pro de por vida", "price": "59.99", "priceCurrency": "USD"}
-      ],
-      "publisher": {"@id": "https://gymteca.com/#org"}
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "¿Gymteca es gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Tiene un plan gratis para siempre con registro ilimitado y la biblioteca de ejercicios. Gymteca Pro añade el Coach, la periodización y las estadísticas avanzadas por 3,99 $ al mes, 29,99 $ al año o 59,99 $ de por vida, con 14 días de prueba gratis. Durante el lanzamiento en la web, Pro está incluido gratis."}},
-        {"@type": "Question", "name": "¿Dónde se guardan mis datos?", "acceptedAnswer": {"@type": "Answer", "text": "Solo en tu móvil. Gymteca no tiene servidores con tus entrenos: no los vemos, no los vendemos y no salen de tu dispositivo."}},
-        {"@type": "Question", "name": "¿Qué pasa si cambio de móvil?", "acceptedAnswer": {"@type": "Answer", "text": "Desde Ajustes puedes exportar una copia de seguridad y luego importarla en el móvil nuevo. También puedes exportar tus registros a CSV."}},
-        {"@type": "Question", "name": "¿Está en App Store y Google Play?", "acceptedAnswer": {"@type": "Answer", "text": "Todavía no. De momento se instala desde el navegador en gymteca.app y funciona como una app más en la pantalla de inicio."}}
-      ]
     }
   ]
 }
@@ -80,325 +56,116 @@
   <div class="wrap">
     <a class="logo" href="/" aria-label="Gymteca, inicio"><img src="/assets/img/teca.svg" alt="" width="32" height="32">Gymteca</a>
     <ul class="nav-links">
-      <li><a href="#funciones">Funciones</a></li>
-      <li><a href="#como-funciona">Cómo funciona</a></li>
-      <li><a href="#precios">Precios</a></li>
-      <li><a href="#instalar">Instalar</a></li>
+      <li><a href="#estado">Por dónde va</a></li>
+      <li><a href="#capturas">Así se ve</a></li>
+      <li><a href="#que-hace">Qué hace</a></li>
       <li><a href="#preguntas">Preguntas</a></li>
     </ul>
-    <a class="btn btn-primary btn-sm" href="https://gymteca.app/">Abrir la app</a>
+    <a class="btn btn-primary btn-sm" href="https://www.instagram.com/gymteca_app/" rel="noopener">Seguir en Instagram</a>
   </div>
 </header>
 
 <main id="main">
 
-<section class="hero">
+<section class="hero diary">
   <div class="wrap">
     <div>
-      <span class="eyebrow">● Lanzamiento · Pro gratis</span>
-      <h1>Tu entreno,<br><span>serie a serie.</span></h1>
-      <p class="lead">Apunta cada serie con un toque, descansa con el temporizador y deja que el Coach te diga cuándo subir el peso. Sin libretas, sin hojas de cálculo y sin crear cuentas.</p>
+      <p class="who">Una app · una persona · a la vista</p>
+      <h1>Estoy construyendo una <em>app de gimnasio.</em></h1>
+      <p class="lead">Se llama Gymteca y llegará al iPhone. La hago yo, de principio a fin, y voy a contar el proceso en vídeo.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="https://gymteca.app/">Empezar gratis →</a>
-        <a class="btn btn-ghost" href="#funciones">Ver funciones</a>
+        <a class="btn btn-primary" href="https://www.instagram.com/gymteca_app/" rel="noopener">Seguir en Instagram →</a>
+        <a class="btn btn-ghost" href="#que-hace">Qué hace</a>
       </div>
-      <ul class="trust">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>Sin registro</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>Sin anuncios</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4 4L19 7"/></svg>Tus datos, solo en tu móvil</li>
-      </ul>
-    </div>
-    <div class="phone tilt">
-      <img src="/assets/img/app-inicio.webp" width="780" height="1688" alt="Pantalla de inicio de Gymteca con la sesión de hoy, la técnica del ejercicio en 3D y los pesos objetivo" fetchpriority="high">
-    </div>
-  </div>
-</section>
-
-<section id="funciones">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">Funciones</p>
-      <h2>Todo lo que necesitas entre serie y serie.</h2>
-      <p>Pensada para usarla con el móvil en una mano y la mancuerna en la otra: botones grandes, cero menús y la información justa en cada momento.</p>
+      <p class="soon"><span class="state">En desarrollo</span> · Próximamente en el App Store · Solo iPhone</p>
     </div>
 
-    <article class="feature">
-      <div>
-        <h3>Registra cada serie con un toque</h3>
-        <p>El peso y las repeticiones ya vienen rellenos con lo que te toca hoy. Pulsas «Hecho» y Gymteca pasa a la siguiente serie sola.</p>
-        <ul>
-          <li>Barra fija con la siguiente serie, siempre a mano</li>
-          <li>Descanso automático con aviso al terminar</li>
-          <li>Dices cómo te ha ido: fácil, justo o al límite</li>
-          <li>Récords personales en el momento en que los bates</li>
-        </ul>
-      </div>
-      <div class="feature-media"><div class="phone"><img src="/assets/img/app-serie-a-serie.webp" width="780" height="1688" alt="Registro de series en Gymteca con un récord de peso y el temporizador de descanso en marcha" loading="lazy"></div></div>
-    </article>
-
-    <article class="feature rev">
-      <div>
-        <h3>Un Coach que sabe cuándo subir el peso <span class="badge-pro">PRO</span></h3>
-        <p>Gymteca analiza tus últimas sesiones y te propone el objetivo de cada ejercicio: subir carga, buscar una repetición más o mantener. Siempre con el porqué. Y vigila tu fatiga para avisarte cuando te conviene bajar el ritmo.</p>
-        <ul>
-          <li>Doble progresión: primero repeticiones, luego peso</li>
-          <li>Incrementos reales según el material (máquina, mancuerna, barra)</li>
-          <li>Medidor de fatiga y tu esfuerzo de las últimas 8 semanas</li>
-          <li>Semana de descarga cuando la fatiga sube o llevas muchas semanas sin descanso: tú eliges menos series o menos peso</li>
-        </ul>
-      </div>
-      <div class="feature-media"><div class="phone"><img src="/assets/img/app-coach.webp" width="780" height="1688" alt="Medidor de fatiga del Coach de Gymteca con sus factores y las barras de esfuerzo de las últimas 8 semanas" loading="lazy"></div></div>
-    </article>
-
-    <article class="feature">
-      <div>
-        <h3>La técnica, en 3D y sin salir de la sesión</h3>
-        <p>Más de 45 ejercicios animados en 3D que puedes girar con el dedo, con los músculos que trabajan y las claves de ejecución.</p>
-        <ul>
-          <li>¿Máquina ocupada? Cámbiala solo por hoy por una equivalente</li>
-          <li>Máquinas, poleas y peso libre</li>
-          <li>Ritmo de cada fase: cuándo subir y cuándo bajar</li>
-        </ul>
-      </div>
-      <div class="feature-media"><div class="phone"><img src="/assets/img/app-tecnica-3d.webp" width="780" height="1688" alt="Ejercicio de jalón al pecho animado en 3D dentro de una sesión de Gymteca" loading="lazy"></div></div>
-    </article>
-
-    <article class="feature rev">
-      <div>
-        <h3>Mira cuánto has mejorado</h3>
-        <p>Cada ejercicio tiene su ficha con la gráfica de tu progreso, y Gymteca te dice cuáles avanzan y cuáles se han estancado.</p>
-        <ul>
-          <li>Gráfica de peso máximo y 1RM estimado, con tus récords marcados</li>
-          <li>Cada ejercicio con su estado: récord reciente, progresando, estancado o bajando</li>
-          <li>Calendario de constancia de 26 semanas con tu racha actual y tu mejor racha</li>
-          <li>«Más fuerte y más ligero»: tu fuerza frente a la tendencia de tu peso</li>
-        </ul>
-      </div>
-      <div class="feature-media"><div class="phone"><img src="/assets/img/app-ficha.webp" width="780" height="1688" alt="Ficha de la sentadilla en Smith con la gráfica de peso máximo y 1RM estimado de los últimos 6 meses" loading="lazy"></div></div>
-    </article>
-  </div>
-</section>
-
-<section class="alt" aria-labelledby="mas-titulo">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">Y además</p>
-      <h2 id="mas-titulo">Pequeños detalles que se notan cada día.</h2>
-    </div>
-    <div class="grid">
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
-        <h3>Hoy toca</h3>
-        <p>Abres la app y ya sabes qué día de rutina te corresponde, cuánto dura y qué pesos mover.</p>
-      </div>
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></div>
-        <h3>Descanso pro</h3>
-        <p>Temporizador a pantalla completa, ±15 s con un toque y la pantalla siempre encendida mientras entrenas.</p>
-      </div>
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM17 6h3v2a3 3 0 0 1-3 3M7 6H4v2a3 3 0 0 0 3 3"/></svg></div>
-        <h3>Récords en vivo</h3>
-        <p>Te avisa al batir tu mejor marca y te dice cuántas repeticiones necesitas para el siguiente récord.</p>
-      </div>
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><path d="M12 8v6M8 10l4 1 4-1M10 21l2-7 2 7"/></svg></div>
-        <h3>Mapa muscular 3D <span class="badge-pro">PRO</span></h3>
-        <p>Mira qué músculos estás entrenando de más o de menos en la última semana, el último mes o el ciclo.</p>
-      </div>
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-        <h3>Tu mes, en una historia</h3>
-        <p>Cada mes y cada ciclo, un resumen a pantalla completa con tus kilos, récords y el ejercicio que más mejoró. Compártelo como imagen.</p>
-      </div>
-      <div class="card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></div>
-        <h3>Tus datos, tuyos</h3>
-        <p>Funciona sin conexión y te recuerda hacer una copia de seguridad. Expórtala, o tus registros en CSV, cuando quieras.</p>
-      </div>
+    <div class="log" id="estado">
+      <div class="log-h"><h2>Por dónde va</h2><span>5 de 8 series</span></div>
+      <div class="meter" aria-hidden="true"><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="n"></i><i></i><i></i></div>
+      <ol>
+        <li class="d"><span class="i">1</span>Biblioteca de 420 ejercicios<span class="s">Hecho</span></li>
+        <li class="d"><span class="i">2</span>Cuestionario que crea tu rutina<span class="s">Hecho</span></li>
+        <li class="d"><span class="i">3</span>Registro serie a serie y descanso<span class="s">Hecho</span></li>
+        <li class="d"><span class="i">4</span>Coach: cuándo subir el peso<span class="s">Hecho</span></li>
+        <li class="d"><span class="i">5</span>Sin conexión y copias de seguridad<span class="s">Hecho</span></li>
+        <li class="n"><span class="i">6</span>Versión para iPhone<span class="s">Ahora</span></li>
+        <li class="t"><span class="i">7</span>Revisión de Apple<span class="s">Falta</span></li>
+        <li class="t"><span class="i">8</span>App Store<span class="s">Falta</span></li>
+      </ol>
+      <p class="log-foot">Actualizado el 17 de noviembre de 2026</p>
     </div>
   </div>
 </section>
 
-<section id="como-funciona">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">Cómo funciona</p>
-      <h2>De la puerta del gym a tu primera serie en un minuto.</h2>
-    </div>
-    <ol class="steps">
-      <li><h3>Crea tu rutina</h3><p>Elige tus días y ejercicios de la biblioteca, con las series y repeticiones que quieras.</p></li>
-      <li><h3>Entrena</h3><p>Abre la sesión de hoy, marca cada serie y deja que el temporizador lleve tu descanso.</p></li>
-      <li><h3>Progresa</h3><p>El Coach ajusta los pesos de la próxima sesión y te enseña cómo vas mejorando.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="alt" aria-labelledby="galeria-titulo">
+<section id="capturas" class="alt" aria-labelledby="capturas-titulo">
   <div class="wrap">
     <div class="section-head">
       <p class="kicker">Por dentro</p>
-      <h2 id="galeria-titulo">Así se ve Gymteca.</h2>
+      <h2 id="capturas-titulo">Así se ve.</h2>
+      <p>Capturas del 17 de noviembre de 2026. Tócalas para verlas en grande.</p>
     </div>
     <div class="gallery">
-      <figure><div class="phone"><img src="/assets/img/app-inicio.webp" width="780" height="1688" alt="Inicio con la sesión de hoy" loading="lazy"></div><figcaption>Inicio · Hoy toca</figcaption></figure>
-      <figure><div class="phone"><img src="/assets/img/app-serie-a-serie.webp" width="780" height="1688" alt="Registro de series y descanso" loading="lazy"></div><figcaption>Serie a serie</figcaption></figure>
-      <figure><div class="phone"><img src="/assets/img/app-tecnica-3d.webp" width="780" height="1688" alt="Técnica del ejercicio en 3D" loading="lazy"></div><figcaption>Técnica 3D</figcaption></figure>
-      <figure><div class="phone"><img src="/assets/img/app-coach.webp" width="780" height="1688" alt="Coach con el medidor de fatiga y el esfuerzo por semana" loading="lazy"></div><figcaption>Coach · Fatiga</figcaption></figure>
-      <figure><div class="phone"><img src="/assets/img/app-progreso.webp" width="780" height="1688" alt="Progreso con el calendario de constancia y el mapa muscular en 3D" loading="lazy"></div><figcaption>Progreso</figcaption></figure>
-      <figure><div class="phone"><img src="/assets/img/app-ficha.webp" width="780" height="1688" alt="Ficha de un ejercicio con su gráfica de progreso y el historial" loading="lazy"></div><figcaption>Ficha del ejercicio</figcaption></figure>
-      <figure><div class="phone"><img src="/assets/img/app-wrapped.webp" width="780" height="1688" alt="Resumen del mes con los kilos levantados en octubre" loading="lazy"></div><figcaption>Tu mes</figcaption></figure>
+      <figure><div class="phone"><img src="/assets/img/app-inicio.webp" width="780" height="1688" alt="Inicio con la sesión de hoy, la técnica del primer ejercicio y los pesos objetivo" loading="lazy"></div><figcaption>Hoy toca</figcaption></figure>
+      <figure><div class="phone"><img src="/assets/img/app-serie-a-serie.webp" width="780" height="1688" alt="Registro de series con un récord de peso recién batido y el descanso en marcha" loading="lazy"></div><figcaption>Serie a serie</figcaption></figure>
+      <figure><div class="phone"><img src="/assets/img/app-tecnica-3d.webp" width="780" height="1688" alt="Jalón al pecho animado en 3D dentro de la sesión, con el calentamiento sugerido" loading="lazy"></div><figcaption>Técnica en 3D</figcaption></figure>
+      <figure><div class="phone"><img src="/assets/img/app-coach.webp" width="780" height="1688" alt="Coach con la propuesta de una semana de descarga y los pesos de la próxima sesión" loading="lazy"></div><figcaption>Coach</figcaption></figure>
+      <figure><div class="phone"><img src="/assets/img/app-progreso.webp" width="780" height="1688" alt="Progreso con la fuerza ganada en seis meses y el estado de cada ejercicio" loading="lazy"></div><figcaption>Progreso</figcaption></figure>
+      <figure><div class="phone"><img src="/assets/img/app-ficha.webp" width="780" height="1688" alt="Ficha de la sentadilla en Smith con la gráfica de peso máximo y 1RM estimado" loading="lazy"></div><figcaption>Ficha del ejercicio</figcaption></figure>
+      <figure><div class="phone"><img src="/assets/img/app-wrapped.webp" width="780" height="1688" alt="Resumen de octubre con las sesiones hechas y el tiempo entrenando" loading="lazy"></div><figcaption>Tu mes</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section aria-labelledby="privacidad-titulo">
-  <div class="wrap">
-    <div class="privacy-band">
-      <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
-      <div>
-        <h3 id="privacidad-titulo">Tus entrenos no salen de tu móvil.</h3>
-        <p>Gymteca no tiene cuentas ni servidores con tus datos. Todo se guarda en tu dispositivo: no lo vemos, no lo vendemos y no lo usamos para publicidad. <a class="green" href="/privacidad">Lee la política de privacidad</a>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="precios" class="alt">
+<section id="que-hace" aria-labelledby="que-hace-titulo">
   <div class="wrap">
     <div class="section-head">
-      <p class="kicker">Precios</p>
-      <h2>Empieza gratis. Pasa a Pro cuando quieras.</h2>
-      <p>El plan gratis es para siempre. Pro añade el Coach y todo lo que te ayuda a progresar sin pensar en números.</p>
+      <p class="kicker">La app</p>
+      <h2 id="que-hace-titulo">Qué hace y qué no.</h2>
     </div>
-
-    <div class="launch">
-      <span aria-hidden="true">🚀</span>
-      <p><strong>Oferta de lanzamiento:</strong> mientras Gymteca se usa desde la web, todas las funciones Pro están incluidas gratis y sin tarjeta. Los planes de pago empezarán cuando llegue a App Store y Google Play, siempre con 14 días de prueba.</p>
-    </div>
-
-    <div class="cur" role="group" aria-label="Moneda">
-      <button type="button" data-cur="usd" aria-pressed="true">$ USD</button>
-      <button type="button" data-cur="eur" aria-pressed="false">€ EUR</button>
-    </div>
-
-    <div class="plans">
-      <div class="plan">
-        <h3>Gratis</h3>
-        <p class="desc">Todo lo básico para apuntar tus entrenos.</p>
-        <div class="price"><b data-usd="$0" data-eur="0&nbsp;€">$0</b><span>para siempre</span></div>
-        <p class="price-note">Sin tarjeta ni registro</p>
+    <div class="split">
+      <div class="card yes">
+        <h3>Qué hace</h3>
         <ul>
-          <li>Registro ilimitado de series y rutinas</li>
-          <li>Biblioteca de más de 45 ejercicios en 3D</li>
-          <li>Temporizador de descanso</li>
-          <li>Récords personales en vivo</li>
-          <li>Copia de seguridad y exportar a CSV</li>
+          <li>Te prepara la rutina: respondes unas preguntas sobre tus días, tu material y tu nivel.</li>
+          <li>Apunta cada serie con un toque y lleva el descanso con un temporizador.</li>
+          <li>El Coach te propone cuándo subir el peso y te explica por qué.</li>
+          <li>Trae una biblioteca de 420 ejercicios, para el gimnasio y para casa.</li>
         </ul>
-        <a class="btn btn-ghost" href="https://gymteca.app/">Empezar gratis</a>
       </div>
-
-      <div class="plan">
-        <h3>Pro mensual</h3>
-        <p class="desc">Todo lo de Gratis, más el entrenador inteligente.</p>
-        <div class="price"><b data-usd="$3.99" data-eur="3,99&nbsp;€">$3.99</b><span>/ mes</span></div>
-        <p class="price-note">14 días de prueba gratis</p>
+      <div class="card no">
+        <h3>Qué no hace</h3>
         <ul>
-          <li>Coach que propone peso y repeticiones</li>
-          <li>Periodización: ciclos de 4 semanas y semana de descarga</li>
-          <li>Estadísticas avanzadas: mapa muscular 3D y fuerza estimada</li>
-          <li class="soon">Respaldo en la nube (próximamente)</li>
+          <li>No pide cuenta ni correo.</li>
+          <li>No necesita conexión: tus entrenos se guardan en tu iPhone.</li>
+          <li>No lleva anuncios.</li>
+          <li>No sustituye a un médico ni a un entrenador titulado.</li>
         </ul>
-        <a class="btn btn-ghost" href="https://gymteca.app/">Probar Pro gratis</a>
       </div>
-
-      <div class="plan best">
-        <span class="tag">Mejor precio</span>
-        <h3>Pro anual</h3>
-        <p class="desc">Todo Pro durante un año completo.</p>
-        <div class="price"><b data-usd="$29.99" data-eur="29,99&nbsp;€">$29.99</b><span>/ año</span></div>
-        <p class="price-note" data-usd="Equivale a $2.50 al mes · ahorras un 37 %" data-eur="Equivale a 2,50 € al mes · ahorras un 37 %">Equivale a $2.50 al mes · ahorras un 37 %</p>
-        <ul>
-          <li>Todo lo de Pro mensual</li>
-          <li>14 días de prueba gratis</li>
-          <li>Un solo pago al año</li>
-        </ul>
-        <a class="btn btn-primary" href="https://gymteca.app/">Probar Pro gratis</a>
-      </div>
-
-      <div class="plan">
-        <h3>Pro de por vida</h3>
-        <p class="desc">Paga una vez y olvídate de suscripciones.</p>
-        <div class="price"><b data-usd="$59.99" data-eur="59,99&nbsp;€">$59.99</b><span>pago único</span></div>
-        <p class="price-note">Precio de lanzamiento</p>
-        <ul>
-          <li>Todo lo de Pro, para siempre</li>
-          <li>Todas las mejoras futuras de Pro</li>
-          <li>Sin renovaciones</li>
-        </ul>
-        <a class="btn btn-ghost" href="https://gymteca.app/">Empezar gratis</a>
-      </div>
-    </div>
-    <p class="plans-foot">Precios orientativos en dólares o euros. En App Store y Google Play verás el precio en tu moneda local, que puede incluir impuestos. Las suscripciones se gestionan y cancelan desde tu cuenta de Apple o Google.</p>
-  </div>
-</section>
-
-<section id="instalar">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">Instalar</p>
-      <h2>Ponla en tu pantalla de inicio.</h2>
-      <p>Gymteca funciona desde el navegador y se instala como una app más, con su icono y a pantalla completa.</p>
-    </div>
-    <div class="install">
-      <div class="card">
-        <h3>iPhone</h3>
-        <ol>
-          <li>Abre <strong>gymteca.app</strong> en <strong>Safari</strong>.</li>
-          <li>Toca el botón <strong>Compartir</strong> (el cuadrado con la flecha).</li>
-          <li>Elige <strong>Añadir a pantalla de inicio</strong>.</li>
-        </ol>
-      </div>
-      <div class="card">
-        <h3>Android</h3>
-        <ol>
-          <li>Abre <strong>gymteca.app</strong> en <strong>Chrome</strong>.</li>
-          <li>Toca el menú <strong>⋮</strong> de arriba a la derecha.</li>
-          <li>Elige <strong>Instalar aplicación</strong> o <strong>Añadir a pantalla de inicio</strong>.</li>
-        </ol>
-      </div>
-    </div>
-    <div class="stores" aria-label="Tiendas de aplicaciones">
-      <span class="store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.1-1.2 2.9-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.4-.9-2.4-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg><span>App Store<small>Próximamente</small></span></span>
-      <span class="store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .4.4.7.8.5l10.4-9.2c.3-.3.3-.7 0-1L4.8 2.3c-.4-.2-.8.1-.8.5zm12.6 8.1 2.9-1.7c.7-.4.7-1.4 0-1.8L6.9 1.1l9.7 9.8zm0 2.2-9.7 9.8 12.6-7.3c.7-.4.7-1.4 0-1.8l-2.9-1.7z"/></svg><span>Google Play<small>Próximamente</small></span></span>
     </div>
   </div>
 </section>
 
-<section id="preguntas">
+<section id="preguntas" class="alt">
   <div class="wrap">
     <div class="section-head">
-      <p class="kicker">Preguntas frecuentes</p>
-      <h2>Lo que nos suelen preguntar.</h2>
+      <p class="kicker">Preguntas</p>
+      <h2>Lo que me suelen preguntar.</h2>
     </div>
     <div class="faq">
-      <details><summary>¿Gymteca es gratis?</summary><p>Tiene un plan gratis para siempre, con registro ilimitado y la biblioteca de ejercicios. Gymteca Pro añade el Coach, la periodización y las estadísticas avanzadas, con 14 días de prueba gratis. Ahora, durante el lanzamiento en la web, Pro está incluido gratis.</p></details>
-      <details><summary>¿Cómo cancelo la suscripción?</summary><p>Cuando Gymteca esté en las tiendas, las suscripciones se pagan y cancelan desde tu cuenta de Apple (App Store) o de Google (Google Play), en cualquier momento. Si cancelas durante los 14 días de prueba, no se te cobra nada.</p></details>
-      <details><summary>¿Necesito registrarme?</summary><p>No. Abres gymteca.app y empiezas a entrenar. No te pedimos correo, contraseña ni ningún dato personal.</p></details>
-      <details><summary>¿Dónde se guardan mis datos?</summary><p>Solo en tu móvil, en el almacenamiento del navegador. Gymteca no tiene servidores con tus entrenos: no los vemos, no los vendemos y no salen de tu dispositivo.</p></details>
-      <details><summary>¿Qué pasa si cambio de móvil o borro el navegador?</summary><p>Como los datos viven en tu móvil, si borras los datos del navegador se pierden. Desde Ajustes puedes exportar una copia de seguridad cuando quieras e importarla después en otro móvil. Te recomendamos hacer una copia de vez en cuando.</p></details>
-      <details><summary>¿Sirve si soy principiante?</summary><p>Sí. Cada ejercicio tiene su técnica animada en 3D y el Coach te propone pesos prudentes y te dice cuándo subir, así que no tienes que calcular nada.</p></details>
-      <details><summary>¿Está en App Store y Google Play?</summary><p>Todavía no. De momento se instala desde el navegador en gymteca.app y funciona como una app más en tu pantalla de inicio. Avisaremos en cuanto esté en las tiendas.</p></details>
-      <details><summary>Tengo un problema o una idea, ¿con quién hablo?</summary><p>Escríbenos a <a class="green" href="mailto:soporte@gymteca.com">soporte@gymteca.com</a> o visita la página de <a class="green" href="/soporte">soporte</a>. Leemos todos los mensajes.</p></details>
+      <details><summary>¿Cuándo sale?</summary><p>Todavía no hay fecha. Queda terminar la versión para iPhone y pasar la revisión de Apple. Lo iré contando en los vídeos.</p></details>
+      <details><summary>¿Habrá versión para Android?</summary><p>De momento, solo iPhone.</p></details>
+      <details><summary>¿Se puede probar ya?</summary><p>Aún no. Se publicará directamente en el App Store.</p></details>
+      <details><summary>Tengo una idea o una pregunta, ¿con quién hablo?</summary><p>Conmigo. Escribe a <a class="green" href="mailto:hola@gymteca.com">hola@gymteca.com</a>; leo todos los mensajes.</p></details>
     </div>
   </div>
 </section>
 
-<section class="final alt">
+<section class="final">
   <div class="wrap">
-    <h2>Tu próxima sesión empieza aquí.</h2>
-    <p>Empieza gratis, sin registro y en segundos.</p>
-    <div class="cta"><a class="btn btn-primary" href="https://gymteca.app/">Abrir Gymteca →</a></div>
+    <h2>Sigue la construcción.</h2>
+    <p>Lo voy contando en Instagram y en Facebook.</p>
+    <div class="cta"><a class="btn btn-primary" href="https://www.instagram.com/gymteca_app/" rel="noopener">Instagram →</a><a class="btn btn-ghost" href="https://www.facebook.com/gymteca" rel="noopener">Facebook</a></div>
   </div>
 </section>
 
@@ -408,15 +175,15 @@
   <div class="wrap">
     <div>
       <a class="logo" href="/"><img src="/assets/img/teca.svg" alt="" width="32" height="32">Gymteca</a>
-      <p style="margin-top:12px;max-width:28em">La app de gimnasio para apuntar tus entrenos serie a serie y progresar sin pensar en números.</p>
+      <p style="margin-top:12px;max-width:28em">Una app de gimnasio para iPhone, en construcción. Próximamente en el App Store.</p>
     </div>
     <div>
       <h4>Gymteca</h4>
       <ul>
-        <li><a href="https://gymteca.app/">Abrir la app</a></li>
-        <li><a href="/#funciones">Funciones</a></li>
-        <li><a href="/#precios">Precios</a></li>
-        <li><a href="/#instalar">Instalar</a></li>
+        <li><a href="/#estado">Por dónde va</a></li>
+        <li><a href="/#que-hace">Qué hace</a></li>
+        <li><a href="https://www.instagram.com/gymteca_app/" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/gymteca" rel="noopener">Facebook</a></li>
         <li><a href="/soporte">Soporte</a></li>
       </ul>
     </div>
@@ -466,24 +233,6 @@
   var x0=null;
   img.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
   img.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>50){show(cur+(dx<0?1:-1));}},{passive:true});
-})();
-
-// Selector de moneda de la sección de precios (se recuerda en este navegador)
-(function(){
-  var KEY='gymteca-moneda',btns=document.querySelectorAll('[data-cur]');
-  function set(cur){
-    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.cur===cur));});
-    document.querySelectorAll('[data-usd]').forEach(function(el){el.textContent=el.dataset[cur];});
-    try{localStorage.setItem(KEY,cur);}catch(e){}
-  }
-  var cur=null;
-  try{cur=localStorage.getItem(KEY);}catch(e){}
-  if(cur!=='usd'&&cur!=='eur'){
-    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}
-    cur=/^Europe\//.test(tz)?'eur':'usd';
-  }
-  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.cur);});});
-  set(cur);
 })();
 </script>
 </body>
